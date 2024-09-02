@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body{
+    background-image: url('./src/assets/home/background-home-desktop.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+    margin: 0;
+    overflow: hidden;
+}
+
 .navbarFont{
     font-family: "Barlow Condensed", sans-serif;
     font-size: larger;

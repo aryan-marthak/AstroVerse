@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       <nav className='navbarFont relative'>
-        <img className='projectLogo absolute -top-4 left-0 w-56' src="./src/assets/navbar/astroverseLogo.png" alt="" />
+        <img className='projectLogo absolute -top-4 left-0 w-56' src="/astroverseLogo.png" alt="" />
         <hr className='unwantedLine absolute top-[86px] left-[225px] z-10 w-[45%]' />
 
         {/* Main Sidebar (Always visible on larger screens) */}
@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className='menuButton absolute top-[64px] right-4'>
             <img
               className='w-10 cursor-pointer'
-              src={`./src/assets/navbar/${openMenu ? 'close' : 'menu'}.svg`}
+              src={`/${openMenu ? 'close' : 'menu'}.svg`}
               alt={openMenu ? 'Close Menu' : 'Open Menu'}
               onClick={toggleMenu}
             />
@@ -52,7 +52,7 @@ const Navbar = () => {
         <div className={`fixed top-4 right-4 smx:hidden z-20 ${openMenu ? 'hidden' : ''}`}>
           <img
             className='w-10 cursor-pointer'
-            src={`./src/assets/navbar/${openMenu ? 'close' : 'menu'}.svg`}
+            src={`/${openMenu ? 'close' : 'menu'}.svg`}
             alt={openMenu ? 'Close Menu' : 'Open Menu'}
             onClick={toggleMenu}
           />
