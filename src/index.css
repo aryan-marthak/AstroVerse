@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbarFont{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: larger;
+}
+
+.menuButton{
+    display: none;
+}
+
+.descriptionFont{
+    font-family: "Barlow", sans-serif;
+    font-size: 20px;
+    color: #d0d6f9;
+}
+
+.h1Font{
+    font-family: "Bellefair", serif;
+    font-size: 100px;
+}
+
+.h2Font{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    color: #d0d6f9;
+}
+
+@media (max-width: 420px){
+    body{
+        background-image: url("./assets/home/background-home-mobile.jpg");
+    }
+    .projectLogo{
+            width: 8rem;
+            margin-top: 1rem;
+    }
+    .unwantedLine{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }    
+}
+
+@media (max-width: 1525px) {
+    .unwantedLine{
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .homeMainDiv{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        /* height: 70vh; */
+    }
+    .homeMainDiv div{
+        margin: 0;
+        padding: 0;
+    }
+}
+@media (max-width: 650px) {
+    .homeMainDiv{
+        height: 70vh;
+    }
+    .homeMainDiv p{
+        margin: 0;
+        padding: 0 1rem;
+        width: fit-content;
+        font-size: medium;
+    }
+    .h2Font{
+        font-size: x-large;
+    }
+    .h1Font{
+        font-size: 3rem;
+    }
+    body{
+        background-image: url("./assets/home/background-home-tablet.jpg");
+    }
+    .projectLogo{
+        width: 8rem;
+        margin-top: 0.5rem;
+        margin-left: -0.5rem;
+
+    }
+    .unwantedLine{
+        display: none;
+    }
+    .menuButton{
+        top: 1rem;
+        /* padding-right: 2.5rem; */
+    }
+}
+
+@media (max-width: 900px) {
+    .sidebar{
+        display: none;
+    }
+    .menuButton{
+        display: block;
+    }
+}
