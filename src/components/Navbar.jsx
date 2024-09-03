@@ -11,18 +11,17 @@ const Navbar = () => {
     <>
       <nav className='navbarFont relative'>
         <img className='projectLogo absolute -top-4 left-0 w-56' src="/astroverseLogo.png" alt="" />
-        <hr className='unwantedLine absolute top-[86px] left-[225px] z-10 w-[45%]' />
 
         {/* Main Sidebar (Always visible on larger screens) */}
-        <div className='sidebar w-[45%] absolute right-0 hidden smx:block'>
-          <ul className='flex justify-center z-10 text-white pr-12 pt-6 rounded-l-full items-center pl-12 mt-12 bg-gradient-to-r from-slate-600 via-slate-500 via-50% to-slate-600'>
-            <li className='cursor-pointer pb-6 mx-[4rem] px-2 border-white border-b-3 hover:font-medium hover:border-border-zinc-350 transition-all'>
+        <div className='sidebar w-[90vh] absolute right-0 hidden smx:block'>
+          <ul className='flex justify-center gap-[8rem] z-10 text-white pr-12 pt-6 rounded-l-full items-center pl-12 mt-12 bg-gradient-to-r from-slate-600 via-slate-500 via-50% to-slate-600'>
+            <li className='cursor-pointer pb-6  px-2 border-white border-b-3 hover:font-medium hover:border-border-zinc-350 transition-all'>
               HOME
             </li>
-            <li className='cursor-pointer pb-6 mx-[4rem] px-2 border-transparent border-b-3 hover:font-medium hover:border-border-zinc-350 transition-all'>
+            <li className='cursor-pointer pb-6 px-2 border-transparent border-b-3 hover:font-medium hover:border-border-zinc-350 transition-all'>
               ABOUT
             </li>
-            <li className='cursor-pointer pb-6 mx-[4rem] px-2 border-transparent border-b-3 hover:font-medium hover:border-border-zinc-350 transition-all'>
+            <li className='cursor-pointer pb-6 px-2 border-transparent border-b-3 hover:font-medium hover:border-border-zinc-350 transition-all'>
               CONTACT US
             </li>
           </ul>

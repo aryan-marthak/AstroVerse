@@ -50,9 +50,7 @@ body{
     .unwantedLine{
         display: none;
     }
-    .sidebar{
-        display: none;
-    }    
+      
 }
 
 @media (max-width: 1525px) {
@@ -76,6 +74,9 @@ body{
     .homeMainDiv div{
         margin: 0;
         padding: 0;
+    }
+    .sidebar{
+        display: none;
     }
 }
 @media (max-width: 650px) {
@@ -113,9 +114,6 @@ body{
 }
 
 @media (max-width: 900px) {
-    .sidebar{
-        display: none;
-    }
     .menuButton{
         display: block;
     }
