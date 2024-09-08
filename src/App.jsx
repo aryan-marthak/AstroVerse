@@ -1,21 +1,32 @@
 import React from 'react'
 import Navbar from "./components/Navbar"
-import Main from "./components/Main"
+import Home from "./components/Home"
+import Contact from "./components/Contact"
+import About from "./components/About"
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+
 
 function App() {
-
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <><Navbar/><Home/></>
+    },
+    {
+      path: "/about",
+      element: <><Navbar/><About/></>
+    },
+    {
+      path: "/contact",
+      element: <><Navbar/><contact/></>
+    }
+  ])
 
   return (
     <>
-      <Navbar/>
-      
-      <Main/>
+      <RouterProvider router={router} />
     </>
   )
 }
 
 export default App
-
-
-
-//{/* <img className=' w-screen h-screen' src="/src/assets/home/background-home-desktop.jpg" alt="" /> */}

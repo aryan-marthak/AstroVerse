@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -12,22 +13,25 @@ const Navbar = () => {
       <nav className='navbarFont relative'>
         <img className='projectLogo absolute -top-4 left-0 w-56' src="/astroverseLogo.png" alt="" />
 
-        {/* Main Sidebar (Always visible on larger screens) */}
+        
         <div className='sidebar w-[90vh] absolute right-0 hidden smx:block'>
           <ul className='flex justify-center gap-[8rem] z-10 text-white pr-12 pt-6 rounded-l-full items-center pl-12 mt-12 bg-gradient-to-r from-slate-600 via-slate-500 via-50% to-slate-600'>
-            <li className='cursor-pointer pb-6  px-2 border-white border-b-3 hover:font-medium hover:border-border-zinc-350 transition-all'>
+            <NavLink className={(e)=>{return e.isActive?"red": "" }} to="/">
+              <li className='yello'>
               HOME
-            </li>
-            <li className='cursor-pointer pb-6 px-2 border-transparent border-b-3 hover:font-medium hover:border-border-zinc-350 transition-all'>
+            </li></NavLink>
+            <NavLink className={(e)=>{return e.isActive?"red": "" }} to="/about">
+              <li className='yello'>
               ABOUT
-            </li>
-            <li className='cursor-pointer pb-6 px-2 border-transparent border-b-3 hover:font-medium hover:border-border-zinc-350 transition-all'>
+            </li></NavLink>
+            <NavLink className={(e)=>{return e.isActive?"red": "" }} to="/contact">
+              <li className='yello'>
               CONTACT US
-            </li>
+            </li></NavLink>
           </ul>
         </div>
 
-        {/* Responsive Sidebar (Visible on small screens) */}
+        
         <div className={`absolute top-0 right-0 h-[100vh] bg-gradient-to-r from-slate-600 via-slate-500 via-50% to-slate-600 transition-transform duration-300 smx:hidden flex flex-col ${openMenu ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className='menuButton absolute top-[64px] right-4'>
             <img
@@ -40,14 +44,14 @@ const Navbar = () => {
 
           {openMenu && (
             <ul className='text-white list-disc pt-36 gap-16 flex flex-col pl-16 pr-32 text-left'>
-              <li className='hover:font- cursor-pointer'>HOME</li>
-              <li className='hover:font- cursor-pointer'>ABOUT</li>
-              <li className='hover:font- cursor-pointer'>CONTACT US</li>
+              <NavLink to="/"><li className='hover:font- cursor-pointer'>HOME</li></NavLink>
+              <NavLink to="/about"><li className='hover:font- cursor-pointer'>ABOUT</li></NavLink>
+              <NavLink to="/contact"><li className='hover:font- cursor-pointer'>CONTACT US</li></NavLink>
             </ul>
           )}
         </div>
 
-        {/* Menu Button Positioned Outside Sidebar */}
+        
         <div className={`fixed top-4 right-4 smx:hidden z-20 ${openMenu ? 'hidden' : ''}`}>
           <img
             className='w-10 cursor-pointer'

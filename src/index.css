@@ -117,3 +117,23 @@ body{
         display: block;
     }
 }
+
+.red{
+    border-color: white;
+    border-bottom-width: 3px;
+}
+
+.yello {
+    cursor: pointer;
+    padding-bottom: 1.5rem; /* pb-6 = 6 * 0.25rem */
+    padding-left: 0.5rem; /* px-2 = 2 * 0.25rem */
+    padding-right: 0.5rem; /* px-2 = 2 * 0.25rem */
+    transition: all 0.2s ease-in-out;
+    border-bottom-width: 3px;
+    border-color: transparent;
+}
+
+.yello:hover {
+    font-weight: 500;
+    border-color: #d1d5db;
+}
