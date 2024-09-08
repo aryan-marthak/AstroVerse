@@ -28,7 +28,7 @@ const Navbar = () => {
         </div>
 
         {/* Responsive Sidebar (Visible on small screens) */}
-        <div className={`fixed top-0 right-0 h-[100vh] bg-gradient-to-r from-slate-600 via-slate-500 via-50% to-slate-600 transition-transform duration-300 smx:hidden flex flex-col ${openMenu ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div className={`absolute top-0 right-0 h-[100vh] bg-gradient-to-r from-slate-600 via-slate-500 via-50% to-slate-600 transition-transform duration-300 smx:hidden flex flex-col ${openMenu ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className='menuButton absolute top-[64px] right-4'>
             <img
               className='w-10 cursor-pointer'
@@ -40,9 +40,9 @@ const Navbar = () => {
 
           {openMenu && (
             <ul className='text-white list-disc pt-36 gap-16 flex flex-col pl-16 pr-32 text-left'>
-              <li className='hover:font-medium cursor-pointer'>HOME</li>
-              <li className='hover:font-medium cursor-pointer'>ABOUT</li>
-              <li className='hover:font-medium cursor-pointer'>CONTACT US</li>
+              <li className='hover:font- cursor-pointer'>HOME</li>
+              <li className='hover:font- cursor-pointer'>ABOUT</li>
+              <li className='hover:font- cursor-pointer'>CONTACT US</li>
             </ul>
           )}
         </div>
