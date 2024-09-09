@@ -18,7 +18,7 @@ function App() {
     },
     {
       path: "/contact",
-      element: <><Navbar/><contact/></>
+      element: <><Navbar/><Contact/></>
     }
   ])
 

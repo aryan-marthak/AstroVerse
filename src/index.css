@@ -32,6 +32,10 @@ body{
     font-family: "Bellefair", serif;
     font-size: 100px;
 }
+.h1FontAC{
+    font-family: "Bellefair", serif;
+    font-size: 55px;
+}
 
 .h2Font{
     font-family: "Barlow Condensed", sans-serif;
@@ -129,11 +133,11 @@ body{
     padding-left: 0.5rem; /* px-2 = 2 * 0.25rem */
     padding-right: 0.5rem; /* px-2 = 2 * 0.25rem */
     transition: all 0.2s ease-in-out;
-    border-bottom-width: 3px;
     border-color: transparent;
 }
 
 .yello:hover {
+    /* border-bottom-width: 3px; */
     font-weight: 500;
     border-color: #d1d5db;
 }

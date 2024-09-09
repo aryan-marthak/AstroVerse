@@ -44,9 +44,9 @@ const Navbar = () => {
 
           {openMenu && (
             <ul className='text-white list-disc pt-36 gap-16 flex flex-col pl-16 pr-32 text-left'>
-              <NavLink to="/"><li className='hover:font- cursor-pointer'>HOME</li></NavLink>
-              <NavLink to="/about"><li className='hover:font- cursor-pointer'>ABOUT</li></NavLink>
-              <NavLink to="/contact"><li className='hover:font- cursor-pointer'>CONTACT US</li></NavLink>
+              <NavLink to="/"><li onClick={toggleMenu} className='hover:font- cursor-pointer'>HOME</li></NavLink>
+              <NavLink to="/about"><li onClick={toggleMenu}  className='hover:font- cursor-pointer'>ABOUT</li></NavLink>
+              <NavLink to="/contact"><li onClick={toggleMenu}  className='hover:font- cursor-pointer'>CONTACT US</li></NavLink>
             </ul>
           )}
         </div>
